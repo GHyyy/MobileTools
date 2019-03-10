@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/snow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@color/dodgerblue">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textColor="#FFFFF0"
+            android:textSize="20sp"
+            android:text="Http请求"/>
+        <ImageButton
+            android:onClick="doClick"
+            android:id="@+id/btn_df_back"
+            android:layout_gravity="left"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/dodgerblue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_back1"
+            />
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical"
+        >
+        <Spinner
+            android:id="@+id/post_sp"
+            android:background="@drawable/add_ime_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        </Spinner>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:text="Request"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="18dp" />
+        <TextView
+            android:id="@+id/tv_request"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="request"
+            android:background="@drawable/text_style2"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:text="Response"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="18dp" />
+        <TextView
+            android:id="@+id/tv_response"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="response"
+            android:background="@drawable/text_style2"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

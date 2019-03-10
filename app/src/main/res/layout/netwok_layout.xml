@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/dodgerblue">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="网络诊断"
+            android:textColor="#FFFFF0"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/btn_df_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/dodgerblue"
+            android:onClick="doClick"
+            android:src="@drawable/icon_back1" />
+    </FrameLayout>
+    <TextView
+        android:id="@+id/tv_show"
+        android:text="请选择要检测项..."
+        android:background="@drawable/text_style"
+        android:layout_marginTop="68dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="6dp"
+        android:gravity="center"
+        android:layout_above="@+id/btn_group"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <RelativeLayout
+        android:id="@+id/btn_group"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_margin="6dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <Button
+                    android:id="@+id/btn_wifi"
+                    android:text="网络连接"
+                    android:layout_weight="1"
+                    android:onClick="doClick"
+                    android:textColor="@color/snow"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/small_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="8dp"
+                    android:layout_height="50dp" />
+                <Button
+                    android:id="@+id/btn_netInfo"
+                    android:text="网络信息"
+                    android:onClick="doClick"
+                    android:layout_weight="1"
+                    android:textColor="@color/snow"
+                    android:background="@drawable/small_button"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

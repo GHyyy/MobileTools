@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@color/dodgerblue">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textColor="#FFFFF0"
+            android:textSize="20sp"
+            android:text="Ping"/>
+        <ImageButton
+            android:onClick="doClick"
+            android:id="@+id/btn_df_back"
+            android:layout_gravity="left"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/dodgerblue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_back1"
+            />
+    </FrameLayout>
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:hint="请输入目标IP或域名"
+        android:textColorHint="#E3E3E3"
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="6dp"
+
+        android:id="@+id/ed_address"/>
+    <Button
+        android:text="Ping"
+        android:textColor="@color/snow"
+        android:id="@+id/btn_reader"
+        android:onClick="doClick"
+        android:background="@drawable/btn_post"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_height="43dp" />
+    <TextView
+        android:id="@+id/tv_showAnr"
+        android:text="content"
+        android:gravity="center"
+        android:background="@drawable/text_style"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_above="@+id/btn_group"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

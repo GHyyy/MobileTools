@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@color/dodgerblue">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textColor="#FFFFF0"
+            android:textSize="20sp"
+            android:text="添加数据"/>
+        <ImageButton
+            android:onClick="doClick"
+            android:id="@+id/btn_df_back"
+            android:layout_gravity="left"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/dodgerblue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_back1"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/id_show"
+        android:background="@drawable/text_style"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="56dp"
+        android:paddingLeft="4dp"
+        android:paddingTop="6dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="43dp">
+        <Button
+            android:id="@+id/btn_contacts"
+            android:text="添加联系人"
+            android:onClick="doClick"
+            android:textColor="@color/snow"
+            android:background="@drawable/btn_post"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_height="43dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
